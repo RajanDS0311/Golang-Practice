@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 //in golang their is no need to use BREAK keyword
@@ -23,12 +24,12 @@ func main() {
 	// }
 
 	// multiple conditions switch
-	// switch time.Now().Weekday() {
-	// case time.Saturday, time.Sunday:
-	// 	fmt.Println("It's the weekend")
-	// default:
-	// 	fmt.Println("It's a weekday")
-	// }
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("It's the weekend")
+	default:
+		fmt.Println("It's a weekday")
+	}
 
 	// TYPE SWITCH
 	whoIam := func(i interface{}) {
