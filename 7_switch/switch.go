@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+//in golang their is no need to use BREAK keyword
+
 func main() {
 	// simple switch statement
 	// i := 10
