@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-// Arrays are fixed-size collections of elements of the same type. They are useful when you know the number of elements in advance and want to store them in a contiguous block of memory. In Go, arrays are defined with a specific size and type.
+// Arrays are fixed-size collections of elements of the same type. They are useful when you know the number of
+// elements in advance and want to store them in a contiguous block of memory.
+// In Go, arrays are defined with a specific size and type.
 // numberes sequence of specified length and type
 // In array is empty then, Int -> 0, String -> "" (empty string), Bool -> false
 
