@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"slices"
 )
 
 // Slices are dynamic, flexible, and more powerful than arrays. They are built on top of arrays
@@ -16,9 +15,10 @@ func main() {
 	// 	fmt.Println(num == nil) // Output: true
 	// 	fmt.Println(len(num))   // Output: 0
 
-	// var num = make([]int, 1, 5) // make is used to vreate slice with specified length and capacity
-	// fmt.Println(num)            // Output: [0 0] Default values for int is 0
-	// fmt.Println(num == nil)     // Output: false
+	var num = make([]int, 1, 5) // make is used to create slice with specified length and capacity
+	fmt.Println(num)            // Output: [0 0] Default values for int is 0
+	fmt.Println(num == nil)     // Output: false
+	fmt.Println(cap(num))
 
 	// fmt.Println(cap(num)) // Output: 5  Capacity is the total number of elements that slice can
 	//                                  hold without needing to allocate more memory.
@@ -37,13 +37,17 @@ func main() {
 	// fmt.Println(nums, nums2)
 
 	// slice operator
-	// arr := [5]int{1, 2, 3, 4, 5}
+	// arr := []int{1, 2, 3, 4, 5}
 	// fmt.Println(arr[0:2])
 	// fmt.Print(arr[0:])
 
-	// slice
-	var num = []int{1, 2, 3, 4, 5}
-	var num1 = []int{1, 2, 3, 4, 5}
-	fmt.Println(slices.Equal(num, num1))
+	// slice package
+	// var num = []int{1, 2, 3, 4, 5}
+	// var num1 = []int{1, 2, 3, 4, 5}
+	// fmt.Println(slices.Equal(num, num1)) //equal compares elements
+
+	// 2D slice
+	// var don = [][]int{{7, 8, 9}, {4, 3, 2}}
+	// fmt.Println(don)
 
 }
