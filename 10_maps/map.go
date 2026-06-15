@@ -9,6 +9,7 @@ import (
 func main() {
 
 	// creating a map using make function
+	// we use make function when we don't know the elements beforehand
 	// m := make(map[string]string)
 
 	// adding key-value pairs to the map
@@ -40,6 +41,7 @@ func main() {
 	// fmt.Println(m) // Output: map[]
 
 	// creating a map without using make function
+	// we use this when elemnts are available to us from starting
 	// m := map[string]int{
 	// 	"age":    21,
 	// 	"height": 162,
