@@ -17,9 +17,9 @@ type OrderStatus string
 
 const (
 	Recieved  OrderStatus = "recieved"
-	Confirmed             = "confirmed"
-	Prepared              = "prepared"
-	Delivered             = "dilevered"
+	Confirmed OrderStatus = "confirmed"
+	Prepared  OrderStatus = "prepared"
+	Delivered OrderStatus = "dilevered"
 )
 
 func changingOrderStatus(status OrderStatus) {
